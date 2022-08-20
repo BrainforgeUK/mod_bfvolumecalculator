@@ -30,8 +30,8 @@
 		<language tag="en-GB">language/en-GB/en-GB.mod_bfvolumecalculator.sys.ini</language>
 	</languages>
 
-  <config>
-    <fields name="params">
+	<config>
+	<fields name="params">
 		<fieldset name="advanced">
 			<field
 				name="layout"
@@ -44,7 +44,15 @@
 				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
 				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
 		</fieldset>
-    </fields>
-  </config>
+	</fields>
+	</config>
 
+	<updateservers>
+		<server
+				type="extension"
+				priority="1"
+				name="MOD_BFVOLCALC">
+			https://brainforge.co.uk/component/bfupdater?element=mod_bfvolumecalculator.xml
+		</server>
+	</updateservers>
 </extension>
