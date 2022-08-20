@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+; @package   Module for pond / aquarium volume calculator
+; @version   0.0.2
+; @author    brainforge.co.uk
+; @copyright Copyright (C) 2010-2022 Jonathan Brain. All rights reserved.
+; @license	 GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
+-->
+<extension type="module" version="3.10.0" client="site" method="upgrade">
+  <name>MOD_BFVOLCALC</name>
+  <creationDate>04 May 2012</creationDate>
+  <author>Jonathan Brain</author>
+  <authorEmail>brainforge@btinternet.com</authorEmail>
+  <authorUrl>http://www.brainforge.co.uk</authorUrl>
+  <copyright>Copyright 2010-2022 Jonathan Brain. All rights reserved.</copyright>
+  <license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+  <version>1.0.0</version>
+  <description>MOD_BFVOLCALC_XML_DESCRIPTION</description>
+
+	<files>
+		<filename module="mod_bfvolumecalculator">mod_bfvolumecalculator.php</filename>
+		<folder>tmpl</folder>
+		<folder>js</folder>
+		<folder>language</folder>
+	    <filename>mod_bfvolumecalculator.xml</filename>
+	</files>
+
+	<languages folder="site">
+		<language tag="en-GB">language/en-GB/en-GB.mod_bfvolumecalculator.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.mod_bfvolumecalculator.sys.ini</language>
+	</languages>
+
+  <config>
+    <fields name="params">
+		<fieldset name="advanced">
+			<field
+				name="layout"
+				type="modulelayout"
+				label="JFIELD_ALT_LAYOUT_LABEL"
+				description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+			<field
+				name="moduleclass_sfx"
+				type="text"
+				label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+				description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+		</fieldset>
+    </fields>
+  </config>
+
+</extension>
