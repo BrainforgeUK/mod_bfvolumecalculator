@@ -20,15 +20,9 @@
 	<files>
 		<filename module="mod_bfvolumecalculator">mod_bfvolumecalculator.php</filename>
 		<folder>tmpl</folder>
-		<folder>js</folder>
 		<folder>language</folder>
 	    <filename>mod_bfvolumecalculator.xml</filename>
 	</files>
-
-	<languages folder="site">
-		<language tag="en-GB">language/en-GB/en-GB.mod_bfvolumecalculator.ini</language>
-		<language tag="en-GB">language/en-GB/en-GB.mod_bfvolumecalculator.sys.ini</language>
-	</languages>
 
 	<config>
 	<fields name="params">
